@@ -22,7 +22,7 @@ NetBeans
 
 Clona este repositorio:
 
-git clone https://github.com/TU-USUARIO/WordPic.git
+git clone https://github.com/SantiLV01/WordPic.git
 
 
 Abre el proyecto en NetBeans.
