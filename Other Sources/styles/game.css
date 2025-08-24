@@ -1,0 +1,24 @@
+/* 🔹 Estilo general de los botones de opciones */
+.option-button {
+    -fx-background-color: transparent;   /* Fondo transparente */
+    -fx-text-fill: white;                /* Texto en blanco */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: white;             /* Si quieres un borde visible */
+    -fx-border-radius: 10;               /* Bordes redondeados */
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+/* Hover (cuando pasas el mouse) */
+.option-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Ligero brillo */
+}
+
+/* Presionado */
+.option-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+}
+.root {
+    -fx-background-color: white;
+}

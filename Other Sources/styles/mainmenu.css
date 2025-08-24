@@ -1,0 +1,51 @@
+/* 🎨 Fondo de la página */
+.root {
+    -fx-background-color: white;
+}
+
+/* 🎮 Estilo general de los botones */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #2E7D32);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 60px;
+    -fx-pref-width: 200px;
+    -fx-background-radius: 30;   /* 🔴 Hace bordes circulares */
+    -fx-border-radius: 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 6, 0.2, 0, 2);
+    -fx-padding: 10 20;
+}
+
+/* Efecto cuando pasas el mouse */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #66BB6A, #388E3C);
+}
+
+/* Botón presionado */
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1B5E20, #2E7D32);
+    -fx-translate-y: 2px;
+}
+
+/* 🎮 Botón de Jugar (verde brillante) */
+.play-button {
+    -fx-background-color: linear-gradient(to bottom, #00C853, #009624);
+}
+
+/* 🎮 Botón de Resultados (azul) */
+.results-button {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #1565C0);
+}
+
+/* 🎮 Botones laterales (⚙ ❗ 🔊) — pequeños y redondos */
+.side-button {
+    -fx-background-color: linear-gradient(to bottom, #FF9800, #EF6C00);
+    -fx-background-radius: 50%;   /* 🔴 Hace botón circular */
+    -fx-border-radius: 50%;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+    -fx-font-size: 22px;
+    -fx-text-fill: white;
+}

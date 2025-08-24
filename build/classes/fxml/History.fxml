@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500" prefWidth="800" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordpic.controllers.HistoryController">
+    
+    <!-- Botón menú -->
+    <Button fx:id="menuButton" layoutX="65.0" layoutY="68.0" onAction="#handleMenu" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #00B7C2; -fx-text-fill: white; -fx-font-size:16; -fx-background-radius: 20;" text="☰ MENÚ" />
+
+    <!-- Botón sonido -->
+    <Button fx:id="soundButton" layoutX="700.0" layoutY="92.0" onAction="#handleSound" prefHeight="56.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-font-size:20;" text="🔊" />
+
+    <!-- Título -->
+    <Label layoutX="300" layoutY="90" style="-fx-background-color: #FFD93B; -fx-text-fill: white; -fx-font-size:28; -fx-font-weight: bold; -fx-padding: 10 20 10 20; -fx-background-radius: 20;" text="RESULTADOS" />
+
+    <!-- Aciertos -->
+    <Label layoutX="100" layoutY="200" style="-fx-font-size:18; -fx-font-weight: bold;" text="N° de aciertos:" />
+    <Label fx:id="correctLabel" layoutX="250" layoutY="200" style="-fx-border-color: black; -fx-border-radius: 10; -fx-padding:5; -fx-min-width:100; -fx-alignment: center;" />
+
+    <!-- Errores -->
+    <Label layoutX="450" layoutY="200" style="-fx-font-size:18; -fx-font-weight: bold;" text="N° de errores:" />
+    <Label fx:id="wrongLabel" layoutX="600" layoutY="200" style="-fx-border-color: black; -fx-border-radius: 10; -fx-padding:5; -fx-min-width:100; -fx-alignment: center;" />
+
+    <!-- Tiempo total -->
+    <Label layoutX="100" layoutY="270" style="-fx-font-size:18; -fx-font-weight: bold;" text="Tiempo total:" />
+    <Label fx:id="timeLabel" layoutX="250" layoutY="270" style="-fx-border-color: black; -fx-border-radius: 10; -fx-padding:5; -fx-min-width:200; -fx-alignment: center;" />
+
+    <!-- Reintentar -->
+    <Button fx:id="retryButton" layoutX="511.0" layoutY="260.0" onAction="#handleRetry" prefHeight="47.0" prefWidth="178.0" style="-fx-background-color: #32CD32; -fx-text-fill: white; -fx-font-size:16; -fx-font-weight: bold; -fx-background-radius: 20;" text="⟳ REINTENTAR" />
+
+    <!-- Mensaje motivacional -->
+    <Label fx:id="motivationalLabel" layoutX="250" layoutY="350" prefHeight="60.0" prefWidth="319.0" style="-fx-border-color: black; -fx-border-radius: 15; -fx-padding:10; -fx-font-size:16; -fx-min-width:300; -fx-alignment: center;" text="MENSAJE MOTIVACIONAL">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="17.0" />
+      </font></Label>
+   <ImageView fitHeight="60.0" fitWidth="800.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/borde2.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="71.0" fitWidth="800.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/borde3.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="104.0" fitWidth="294.0" layoutX="262.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/resultados.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="79.0" fitWidth="76.0" layoutX="689.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/audio.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

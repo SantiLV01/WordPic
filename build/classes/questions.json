@@ -1,0 +1,20 @@
+[
+  {
+    "question": "¿Cuál es la capital de Francia?",
+    "image": "francia.png",
+    "answer": "París",
+    "options": ["Londres", "París", "Madrid"]
+  },
+  {
+    "question": "¿Cuál es el animal más rápido del mundo?",
+    "image": "guepardo.png",
+    "answer": "Guepardo",
+    "options": ["Tigre", "León", "Guepardo"]
+  },
+  {
+    "question": "¿Cuál es el planeta más cercano al Sol?",
+    "image": "mercurio.png",
+    "answer": "Mercurio",
+    "options": ["Venus", "Mercurio", "Marte"]
+  }
+]

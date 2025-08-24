@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="900" stylesheets="@../styles/help.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordpic.controllers.HelpController">
+
+ 
+    <HBox fx:id="topBar" alignment="CENTER_LEFT" layoutX="-21.0" layoutY="-16.0" spacing="10" styleClass="top-bar" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="-16.0" />
+
+    
+    <Button fx:id="helpButton" layoutX="326.0" layoutY="94.0" prefHeight="57.0" prefWidth="212.0" styleClass="help-btn" text="❗ AYUDA" AnchorPane.leftAnchor="326.0" AnchorPane.topAnchor="94.0" />
+
+    
+    <Label layoutX="316.0" layoutY="168.0" prefHeight="96.0" prefWidth="272.0" styleClass="title" text="¿CÓMO JUGAR?" AnchorPane.leftAnchor="316.0" AnchorPane.topAnchor="168.0">
+      <font>
+         <Font size="40.0" />
+      </font></Label>
+
+    
+    <VBox layoutX="61.0" layoutY="293.0" prefHeight="191.0" prefWidth="338.0" spacing="5" styleClass="box" AnchorPane.leftAnchor="61.0" AnchorPane.topAnchor="293.0">
+        <Label styleClass="subtitle" text="INSTRUCCIONES:" />
+        <Label text="• Observa la imagen mostrada." wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+        <Label text="• Lee la pregunta o pista." wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+        <Label text="• Selecciona la respuesta correcta." wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+        <Label text="• Avanza con el botón 'Siguiente'." wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+    </VBox>
+
+    <!-- Caja de consejos -->
+    <VBox layoutX="453.0" layoutY="293.0" prefHeight="191.0" prefWidth="318.0" spacing="5" styleClass="box" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="293.0">
+      <Label styleClass="subtitle" text="CONSEJOS: " />
+        <Label prefHeight="133.0" prefWidth="320.0" text="• Lista con tips para mejorar vocabulario." wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+    </VBox>
+     <Button fx:id="menuButton" layoutX="66.0" layoutY="84.0" prefHeight="51.0" prefWidth="160.0" styleClass="menu-btn" text="☰ MENÚ" />
+     <Button fx:id="soundButton" layoutX="762.0" layoutY="84.0" prefHeight="67.0" prefWidth="72.0" styleClass="sound-btn" text="🔊" />
+   <ImageView fitHeight="67.0" fitWidth="906.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/borde2.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="127.0" fitWidth="906.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/borde3.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="57.0" fitWidth="79.0" layoutX="763.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/audio.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="87.0" fitWidth="281.0" layoutX="292.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Ayudaa.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="46.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/Menu.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>
